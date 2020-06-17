@@ -1,0 +1,21 @@
+#include <iostream>
+//Nama : RIZA ZULFA MULYAWAN -- NIM : ETE10190116
+using namespace std;
+
+int hambatanSeri (int r, int f, int g){return r + f + g;}
+	float hambatanparalel (float r, float s, float t){
+int z = r * s * t; float satu, dua, tiga, done, hasil;
+	satu = (z / r) * 1;dua = (z / s) * 1; tiga = (z / t) * 1; hasil = (satu + dua + tiga); done = hasil / z;
+		cout << "\n\nparalel >> "; cout << hasil <<"/" << z;
+
+	return done;}
+	
+int main(){
+int in1,in2,in3;
+	cout << "masukkan hambatan pertama\t>> ";cin >> in1;
+	cout << "masukkan hambatan kedua\t\t>> ";cin >> in2;
+	cout << "masukkan hambatan ketiga\t\t>> ";cin >> in3;
+	cout << "\nseri "<< hambatanSeri (in1, in2, in3);
+	cout << "\n\nparalel " << hambatanparalel (in1, in2, in3);
+	
+	return 0;}
